@@ -1,0 +1,22 @@
+{
+  "name": "tt2026_pre-entrega",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanc-godoy/TT2026_pre-entrega.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/juanc-godoy/TT2026_pre-entrega/issues"
+  },
+  "homepage": "https://github.com/juanc-godoy/TT2026_pre-entrega#readme"
+}
