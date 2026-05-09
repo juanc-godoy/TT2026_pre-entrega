@@ -39,29 +39,27 @@ async function del(end){
 
 const url= "https://fakestoreapi.com/"
 const args= process.argv
-//const {,, metodo, endpoint}= args
-const metodo = args[2]
-const endpoint= args[3]
-const title= args[4]
-const price= args[5]
-const category= args[6]
+const [,, metodo, endpoint, title, price, category]= args
 
-switch (metodo.toUpperCase()){
-    case "GET":
-        get(endpoint)
-        break
+if (metodo && endpoint){
+    switch (metodo.toUpperCase()){
+        case "GET":
+            get(endpoint)
+            break
 
-    case "POST":
-        if (args.length>=7){
-            post(endpoint,title,price,category)
-            break
-        }else{
-            console.log("Por favor ingresar datos necesarios para agregar el producto")
-            break
-        }
+        case "POST":
+            if (args.length>=7){
+                post(endpoint,title,price,category)
+                break
+            }else{
+                console.log("Por favor ingresar datos necesarios para agregar el producto")
+                break
+            }
     
-    case "DELETE":
-        del(endpoint)
-        break    
+        case "DELETE":
+            del(endpoint)
+            break    
+    }
 }
+
 
